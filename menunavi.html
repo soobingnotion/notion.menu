@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Roboto Mono', monospace;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #FFF786;
+		}
+
+		.border {
+			border: 0px solid #000000;
+		}
+
+		.rounded {
+      			border-radius: 20px;
+    		}
+
+		.navMenu a:hover {
+
+			color: #F8A33C;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu border background rounded">
+		<a id="productivity" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase" style="color: #f39800;"></i> productivity</a>
+		<a id="school" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-graduation-cap" style="color: #f39800;"></i> school</a>
+		<a id="leisure" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-gamepad" style="color: #f39800;"></i> leisure</a>
+		<a id="lifestyle" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-mountain" style="color: #f39800;"></i> lifestyle</a>
+		<a id="nutrition" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-utensils" style="color: #f39800;"></i> nutrition</a>
+		<a id="health" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart-pulse" style="color: #f39800;"></i> health</a>
+		<a id="fitness" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-dumbbell" style="color: #f39800;"></i> fitness</a>
+		<a id="wellness" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-face-smile" style="color: #f39800;"></i> wellness</a>
+		<a id="journal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book" style="color: #f39800;"></i> journal</a>
+		<a id="finances" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-1" style="color: #f39800;"></i> finances</a>
+		<a id="personal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user" style="color: #f39800;"></i> personal</a>
+		<a id="manifest" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-star" style="color: #f39800;"></i> manifest</a>
+		<a id="others" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-seedling" style="color: #f39800;"></i> others</a>
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'productivity')
+				window.open("https://www.notion.so/PRODUCTIVITY-99fba178dde5435f9befe622badad6a5", '_parent').focus();
+			else if (id == 'school')
+				window.open("https://www.notion.so/SCHOOL-16f107273c7945869ef9b27586c84a7d", '_parent').focus();
+			else if (id == 'leisure')
+				window.open("https://www.notion.so/LEISURE-fbb6dc1a57f04a969788a7e98bb31e63", '_parent').focus();
+			else if (id == 'lifestyle')
+				window.open("https://www.notion.so/LIFESTYLE-4609f6b7684b4174a45827b69dad02e1", '_parent').focus();
+			else if (id == 'nutrition')
+				window.open("https://www.notion.so/NUTRITION-bb91da914d9541609f6765d1885391c9", '_parent').focus();
+			else if (id == 'health')
+				window.open("https://www.notion.so/HEALTH-4d774d92521b4aa19d7f9c7b07089dab", '_parent').focus();
+			else if (id == 'fitness')
+				window.open("https://www.notion.so/FITNESS-299e708b057f4bc99eee6bdfe9c50989", '_parent').focus();
+			else if (id == 'wellness')
+				window.open("https://www.notion.so/WELLNESS-f98d84cb14844177af8d5e9ed8c94593", '_parent').focus();
+			else if (id == 'journal')
+				window.open("https://www.notion.so/JOURNAL-26656a8d4dad4cacbb44b8426262ac34", '_parent').focus();
+			else if (id == 'finances')
+				window.open("https://www.notion.so/FINANCES-9bff9b86c348411a8bbe214408d41854", '_parent').focus();
+			else if (id == 'personal')
+				window.open("https://www.notion.so/PERSONAL-fabd383db63f42e59d5dd3c0952f46e2", '_parent').focus();
+			else if (id == 'manifest')
+				window.open("https://www.notion.so/MANIFEST-3afd5c0d95f142668cd834d14af167f1", '_parent').focus();
+			else if (id == 'others')
+				window.open("https://www.notion.so/OTHERS-b3dffddb79d941b1af9e4b7ef42031e7", '_parent').focus();
+		}
+	</script>
+
+
+</body>
+
+</html>
